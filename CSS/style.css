@@ -1,0 +1,114 @@
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-menu div {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu.open div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-container {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-container.open {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+/* Table of contents styling */
+.nav-container {
+    width: 250px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container h2 {
+    color: #ffcc00;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-container li {
+    margin: 15px 0;
+}
+
+.nav-container a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-container a:hover {
+    color: #ffcc00;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 270px; /* Space for the sidebar */
+    padding: 40px;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Styling for the video placeholder */
+.video-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #333333;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    border: 1px solid #444444;
+    margin-top: 20px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Game Prototype</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Sidebar/Table of contents -->
+    <div class="nav-container">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="dev-team.html">Meet the Dev Team</a></li>
+            <li><a href="requirements.html">SW Requirements Spec</a></li>
+            <li><a href="resources.html">Resources Used</a></li>
+            <li><a href="project-description.html">Original Project Description</a></li>
+            <li><a href="progress.html">Group Progress</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1>Project Title: Educational Game Prototype</h1>
+        <p>Welcome to our project page! This educational game prototype is designed to ...</p>
+
+        <h2>Background</h2>
+        <p>This project aims to provide an engaging learning experience by...</p>
+
+        <!-- Video Placeholder -->
+        <div class="video-placeholder">Video Trailer Coming Soon</div>
+    </div>
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.querySelector('.nav-container').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
