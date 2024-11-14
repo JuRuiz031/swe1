@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Dev Team</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Sidebar/Table of contents -->
+    <div class="nav-container">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="requirements.html">SW Requirements Spec</a></li>
+            <li><a href="resources.html">Resources Used</a></li>
+            <li><a href="project-description.html">Original Project Description</a></li>
+            <li><a href="progress.html">Group Progress</a></li>
+        </ul>
+    </div>
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1>Meet the Dev Team</h1>
+        <div class="team-member">
+            <img src="path/to/photo1.jpg" alt="Developer 1 Photo">
+            <h2>Developer 1 Name</h2>
+            <h3>Team Role</h3>
+            <p>Short description about Developer 1.</p>
+            <p>
+                <a href="https://github.com/developer1" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/developer1" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+        <div class="team-member">
+            <img src="path/to/photo2.jpg" alt="Developer 2 Photo">
+            <h2>Developer 2 Name</h2>
+            <h3>Team Role</h3>
+            <p>Short description about Developer 2.</p>
+            <p>
+                <a href="https://github.com/developer2" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/developer2" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+        <div class="team-member">
+            <img src="path/to/photo3.jpg" alt="Developer 3 Photo">
+            <h2>Developer 3 Name</h2>
+            <h3>Team Role</h3>
+            <p>Short description about Developer 3.</p>
+            <p>
+                <a href="https://github.com/developer3" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/developer3" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+        <div class="team-member">
+            <img src="path/to/photo4.jpg" alt="Developer 4 Photo">
+            <h2>Developer 4 Name</h2>
+            <h3>Team Role</h3>
+            <p>Short description about Developer 4.</p>
+            <p>
+                <a href="https://github.com/developer4" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/developer4" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+        <div class="team-member">
+            <img src="path/to/photo5.jpg" alt="Developer 5 Photo">
+            <h2>Developer 5 Name</h2>
+            <h3>Team Role</h3>
+            <p>Short description about Developer 5.</p>
+            <p>
+                <a href="https://github.com/developer5" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/developer5" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.querySelector('.nav-container').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

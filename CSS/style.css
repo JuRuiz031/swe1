@@ -1,5 +1,5 @@
 .hamburger-menu {
-    display: none;
+    display: block; /* Make it always visible */
     position: fixed;
     top: 20px;
     left: 20px;
@@ -30,22 +30,12 @@
 }
 
 .nav-container {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Move it completely off-screen */
     transition: transform 0.3s ease;
 }
 
 .nav-container.open {
     transform: translateX(0);
-}
-
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-    }
-
-    .main-content {
-        margin-left: 0;
-    }
 }
 
 body {
@@ -54,6 +44,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Table of contents styling */
@@ -64,6 +58,7 @@ body {
     position: fixed;
     height: 100%;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    left: 0; /* Ensure it is positioned on the left */
 }
 
 .nav-container h2 {
@@ -91,24 +86,59 @@ body {
     color: #ffcc00;
 }
 
-/* Main content styling */
 .main-content {
-    margin-left: 270px; /* Space for the sidebar */
     padding: 40px;
     max-width: 800px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh; /* Ensure the main content takes at least the full viewport height */
 }
 
-/* Styling for the video placeholder */
 .video-placeholder {
     width: 100%;
     height: 300px;
     background-color: #333333;
-    color: #999999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+/* Team member styling */
+.team-member {
+    margin: 20px 0;
+    text-align: center;
+    max-width: 300px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h2 {
+    margin: 10px 0 5px;
     font-size: 1.5em;
-    border: 1px solid #444444;
-    margin-top: 20px;
+}
+
+.team-member h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+.team-member p {
+    margin: 10px 0;
+}
+
+.team-member a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.team-member a:hover {
+    color: #ffcc00;
 }

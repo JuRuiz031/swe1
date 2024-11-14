@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Description</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Sidebar/Table of contents -->
+    <div class="nav-container">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="dev-team.html">Meet the Dev Team</a></li>
+            <li><a href="requirements.html">SW Requirements Spec</a></li>
+            <li><a href="resources.html">Resources Used</a></li>
+            <li><a href="progress.html">Group Progress</a></li>
+        </ul>
+    </div>
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1>Project Prompt:</h1>
+        <p>This is a placeholder for the project prompt description. It will detail the prompt given to us.</p>
+        <h2>Our Approach</h2>
+        <p>This is a placeholder for our approach. It will briefly describe how we went about with the project.</p>
+    </div>
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.querySelector('.nav-container').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

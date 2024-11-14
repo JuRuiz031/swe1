@@ -1,1 +1,41 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources Used</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Sidebar/Table of contents -->
+    <div class="nav-container">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="dev-team.html">Meet the Dev Team</a></li>
+            <li><a href="requirements.html">SW Requirements Spec</a></li>
+            <li><a href="project-description.html">Original Project Description</a></li>
+            <li><a href="progress.html">Group Progress</a></li>
+        </ul>
+    </div>
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1>Resources Used</h1>
+        <p>This page will list the resources that we used throughout the project, including documentation and other references.</p>
+        <h2>Works Cited</h2>
+        <p>Placeholder for the list of resources and documentation used in the project.</p>
+    </div>
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.querySelector('.nav-container').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
