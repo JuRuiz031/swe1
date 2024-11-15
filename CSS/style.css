@@ -112,10 +112,9 @@ body {
 }
 
 .team-member {
-    margin: 20px;
+    margin: 20px 0;
     text-align: center;
     max-width: 300px;
-    flex: 1 1 calc(50% - 40px); /* Adjust width for two columns with gap */
 }
 
 .team-member img {
@@ -148,4 +147,12 @@ body {
 
 .team-member a:hover {
     color: #ffcc00;
+}
+
+.resource-link {
+    color: #ffcc00;
+}
+
+.resource-link:hover {
+    color: #ff9900;
 }
