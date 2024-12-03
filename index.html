@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational Game Prototype</title>
+    <title>FACTORBS Educational Prototype</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
     <!-- Hamburger Menu -->
@@ -31,13 +32,21 @@
 
         <h2>Background</h2>
         <p> 
-            Finding a number's factors is an important math skill, foundational to division and used throughout the school curriculum. 
+            Finding a number's factors is an important math skill that is foundational to division and used throughout math from Middle School through University. 
             This game aims to teach students the skills required to identify factors in an engaging and effective manner.
         </p>
 
         <!-- Video Placeholder -->
         <h2>Video Showcase</h2>
         <div class="video-placeholder">Video Trailer Coming Soon</div>
+
+        <!-- Collapsible How to Play Section -->
+        <h2 class="collapsible">How to Play &#9660;</h2>
+        <div class="content">
+            <p>Instructions on how to play the game will be provided here.</p>
+            <!-- Add images and more detailed instructions here -->
+        </div>
+
         <!-- Prototype Placeholder -->
         <h2>Play the Prototype</h2>
         <p>Playable Prototype Coming Soon</p>
@@ -46,6 +55,23 @@
         document.getElementById('hamburger-menu').addEventListener('click', function() {
             this.classList.toggle('open');
             document.querySelector('.nav-container').classList.toggle('open');
+        });
+
+        // Collapsible section script
+        document.addEventListener('DOMContentLoaded', function() {
+            var coll = document.querySelector('.collapsible');
+            var content = document.querySelector('.content');
+
+            coll.addEventListener('click', function() {
+                this.classList.toggle('active');
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    this.innerHTML = 'How to Play &#9660;';
+                } else {
+                    content.style.display = 'block';
+                    this.innerHTML = 'How to Play &#9650;';
+                }
+            });
         });
     </script>
 </body>

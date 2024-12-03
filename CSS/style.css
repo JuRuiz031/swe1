@@ -50,7 +50,6 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Table of contents styling */
 .nav-container {
     width: 250px;
     padding: 20px;
@@ -87,12 +86,12 @@ body {
 }
 
 .main-content {
-    padding: 40px;
+    padding: 2%;
     max-width: 1200px;
-    text-align: center;
+    text-align: center; /* Center text */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
     min-height: 100vh; /* Ensure the main content takes at least the full viewport height */
@@ -102,6 +101,35 @@ body {
     width: 100%;
     height: 300px;
     background-color: #333333;
+}
+
+/* Collapsible section styling */
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    background-color: #1e1e1e;
+    margin: 20px 0;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.collapsible.active {
+    background-color: #333333;
+}
+
+.content {
+    display: none;
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .team-container {
@@ -155,4 +183,54 @@ body {
 
 .resource-link:hover {
     color: #ff9900;
+}
+
+/* Specific styles for the resources page */
+.resources-content {
+    padding-top: 5%;
+    text-align: left;
+}
+
+.resources-content h1 {
+    margin-top: 2%;
+}
+
+/* Responsive styles */
+@media (max-width: 1440px) {
+    .main-content {
+        padding: 5%;
+    }
+
+    .resources-content h1 {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .main-content {
+        padding: 5%;
+    }
+
+    .resources-content h1 {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        width: 200px;
+    }
+
+    .main-content {
+        padding: 3%;
+    }
+
+    .resources-content h1 {
+        margin-top: 3%;
+    }
+}
+
+/* Specific styles for the requirements page */
+.fixed-width {
+    width: 880px;
 }

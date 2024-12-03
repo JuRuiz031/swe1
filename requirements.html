@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SW Requirements Spec</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
     <!-- Hamburger Menu -->
@@ -28,18 +29,55 @@
         <h1>SW Requirements Spec</h1>
         <p>A placeholder for our SRS</p>
         <h1>Other Deliverables</h1>
-        <h2>Requirements</h2>
-        <embed src="files/requirements.pdf" width="880px" height="800px" type="application/pdf">
-        <h2>Use Case Diagram</h2>
-        <embed src="files/use_case.pdf" width="880px" height="800px" type="application/pdf">
-        <h2>Class and Sequence Diagrams</h2>
-        <embed src="files/class-sequence.pdf" width="880px" height="800px" type="application/pdf">
-        <h2>Slides</h2>
+        
+        <!-- Collapsible Requirements Section -->
+        <h2 class="collapsible fixed-width">Requirements &#9660;</h2>
+        <div class="content fixed-width">
+            <embed src="files/requirements.pdf" width="880px" height="800px" type="application/pdf">
+        </div>
+        
+        <!-- Collapsible Use Case Diagram Section -->
+        <h2 class="collapsible fixed-width">Use Case Diagram &#9660;</h2>
+        <div class="content fixed-width">
+            <embed src="files/use_case.pdf" width="880px" height="800px" type="application/pdf">
+        </div>
+        
+        <!-- Collapsible Class and Sequence Diagrams Section -->
+        <h2 class="collapsible fixed-width">Class and Sequence Diagrams &#9660;</h2>
+        <div class="content fixed-width">
+            <embed src="files/class-sequence.pdf" width="880px" height="800px" type="application/pdf">
+        </div>
+        
+        <!-- Collapsible Slides Section -->
+        <h2 class="collapsible fixed-width">Slides &#9660;</h2>
+        <div class="content fixed-width">
+            <p>Slides content will be provided here.</p>
+        </div>
     </div>
     <script>
         document.getElementById('hamburger-menu').addEventListener('click', function() {
             this.classList.toggle('open');
             document.querySelector('.nav-container').classList.toggle('open');
+        });
+
+        // Collapsible sections script
+        document.addEventListener('DOMContentLoaded', function() {
+            var coll = document.getElementsByClassName('collapsible');
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    var content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        this.innerHTML = this.innerHTML.replace('&#9650;', '&#9660;');
+                    } else {
+                        content.style.display = 'block';
+                        this.innerHTML = this.innerHTML.replace('&#9660;', '&#9650;');
+                    }
+                });
+            }
         });
     </script>
 </body>

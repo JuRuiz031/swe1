@@ -6,3 +6,5 @@ Website For Software Engineering 1 Group Project
 11/14/2024: Added some of the Dev Team Profile, updated the look a bit
 
 11/15/2024: Removed JS/script.js and Progress.html file, finished the skeleton look (needs more polish for the final design before end of semester)
+
+12/3/2024: Edited Layout further, changed text a bit to make it look better, added more references, expanded on sections of site
