@@ -260,3 +260,8 @@ body {
 .fixed-width {
     width: 880px;
 }
+
+iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
