@@ -36,25 +36,33 @@
             FACTORBS is an arcade game that aims to teach students the skills required to identify factors in an engaging and effective manner. In the game, snakes of orbs will approach on a set path, and the player must stop them from reaching the end by clearing the orbs. They do this by firing orbs from a cannon, which can be controlled using the mouse. When a fired orb hits a snake orb that it is a factor of, the snake orb’s value is divided by the number of the fired orb. The player must be careful as hitting the wrong orb causes the fired orb to be inserted into the snake, making it longer. The more orbs the player can clear, the higher their score at the end of the game.
         </p>
 
-        <!-- Video Placeholder -->
+        <!-- Video Showcase -->
         <h2>Video Showcase</h2>
-        <div class="video-placeholder">Video Trailer Coming Soon</div>
+        <iframe width="100%" height="315" src="https://youtu.be/k4zP0oZ8Rr4" frameborder="0" allowfullscreen></iframe>
 
-        <!-- Collapsible How to Play Section -->
-        <h2 class="collapsible">How to Play &#9660;</h2>
+        <!-- Play the Prototype Section -->
+        <h2>Play the Prototype</h2>
+        <p><a class="resource-link" href="web_playable/swe1-game.html">Play Here</a></p>
+
+        <!-- Collapsible Download Links Section -->
+        <h2 class="collapsible">Download Links &#9660;</h2>
         <div class="content">
             <p>FACTORBS can be installed below for your computer!</p>
-            <!-- Add images and more detailed instructions here -->
-            <a href="files/FACTORBS-win.exe" download="FACTORBS-win.exe">Windows Download</a>
-            <div></div>
-            <a href="files/FACTORBS-mac.zip" download="FACTORBS-mac.zip">MacOS Download</a>
-            <div></div>
-            <a href="files/FACTORBS-linux.x86_64" download="FACTORBS-linux.x86_64">Linux Download</a>
-
-        <!-- Prototype Placeholder -->
-        <h2>Play the Prototype</h2>
-        <li><a href="web_playable/swe1-game.html">Play Here</a></li>
-        <!--<p>Playable Prototype Coming Soon</p>-->
+            <div class="download-links">
+                <div class="download-column">
+                    <h3>Windows</h3>
+                    <a class="resource-link" href="files/FACTORBS-win.exe" download="FACTORBS-win.exe">Windows Download</a>
+                </div>
+                <div class="download-column">
+                    <h3>MacOS</h3>
+                    <a class="resource-link" href="files/FACTORBS-mac.zip" download="FACTORBS-mac.zip">MacOS Download</a>
+                </div>
+                <div class="download-column">
+                    <h3>Linux</h3>
+                    <a class="resource-link" href="files/FACTORBS-linux.x86_64" download="FACTORBS-linux.x86_64">Linux Download</a>
+                </div>
+            </div>
+        </div>
     </div>
     <script>
         document.getElementById('hamburger-menu').addEventListener('click', function() {
@@ -71,10 +79,10 @@
                 this.classList.toggle('active');
                 if (content.style.display === 'block') {
                     content.style.display = 'none';
-                    this.innerHTML = 'How to Play &#9660;';
+                    this.innerHTML = 'Download Links &#9660;';
                 } else {
                     content.style.display = 'block';
-                    this.innerHTML = 'How to Play &#9650;';
+                    this.innerHTML = 'Download Links &#9650;';
                 }
             });
         });
